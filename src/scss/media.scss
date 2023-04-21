@@ -1,0 +1,207 @@
+@media (max-width: 1919px) {
+    .container {
+        padding: 0 45px;
+    }
+    .header {
+        padding-top: 35px;
+    }
+    .intro {
+        padding-top: 40px;
+        padding-bottom: 70px;
+        &__title {
+            font-size: 136px;
+            line-height: 120px;
+        }
+        &__subtitle {
+            margin-top: 45px;
+        }
+        &__img {
+            &-first {
+                left: 298px;
+                bottom: 173px;
+            }
+            &-second {
+                left: 45px;
+                bottom: 75px;
+            }
+            &-third {
+                display: none;
+            }
+        }
+        &__line {
+            width: 1120px;
+            height: 340px;
+            &-first {
+                transform: rotate(30deg);
+                bottom: 200px;
+                right: -300px;
+                width: 1200px;
+            }
+            &-second {
+                bottom: 0px;
+                right: 50px;
+            }
+        }
+        &__button {
+            margin-top: 240px;
+            margin-left: 45.5%;
+        }
+    }
+}
+
+@media (max-width: 999px) {
+    .container {
+        padding: 0 30px;
+    }
+    .header {
+        padding-top: 22px;
+        &__logo {
+            font-size: 40px;
+            line-height: 46px;
+            margin-right: 17.3%;
+        }
+        .pixel {
+            font-size: 40px;
+            line-height: 46px;
+        }
+        .roboto-900 {
+            font-size: 40px;
+            line-height: 46px;
+        }
+    }
+    .intro {
+        padding-top: 47px;
+        padding-bottom: 74px;
+        &__title {
+            font-size: 105px;
+            line-height: 93px;
+        }
+        &__subtitle {
+            margin-top: 30px;
+            max-width: 311px;
+            margin-left: 50%;
+        }
+        &__img {
+            &-first {
+                left: 30px;
+                bottom: 240px;
+            }
+            &-second {
+                display: none;
+            }
+            &-third {
+                display: block;
+                bottom: 74px;
+                left: 30px;
+                width: 251px;
+                height: 146px;
+                object-fit: cover;
+                border-radius: 20px;
+            }
+        }
+        &__line {
+            width: 950px;
+            height: 265px;
+            &-first {
+                transform: rotate(30deg);
+                bottom: 250px;
+                right: -300px;
+                width: 1050px;
+            }
+            &-second {
+                bottom: 100px;
+                right: 50px;
+            }
+        }
+        &__button {
+            margin-top: 280px;
+            margin-left: 45.5%;
+            padding: 20px 114px;
+        }
+    }
+}
+
+
+@media (max-width: 767px) {
+    .container {
+        padding: 0 20px;
+    }
+    .header {
+        padding-top: 20px;
+        &__logo {
+            font-size: 16px;
+            line-height: 18.75px;
+            margin-right: 2.8%;
+        }
+        .pixel {
+            font-size: 16px;
+            line-height: 18.75px;
+        }
+        .roboto-900 {
+            font-size: 16px;
+            line-height: 18.75px;
+        }
+        &__list {
+            gap: 5px;
+        }
+        &__link {
+            border-radius: 74px;
+            padding: 2px 8px;
+            font-size: 13px;
+            line-height: 15.2px;
+        }
+    }
+    .intro {
+        padding-top: 10px;
+        padding-bottom: 46px;
+        &__title {
+            font-size: 42px;
+            line-height: 37.34px;
+            width: 100%;
+            letter-spacing: -0.1px;
+        }
+        &__subtitle {
+            max-width: 100%;
+            margin-left: 0%;
+            margin-top: 158px;
+            font-size: 13px;
+            line-height: 16.9px;
+        }
+        &__img {
+            &-first {
+                left: 100%;
+                bottom: 45%;
+                transform: translateX(-115%);
+                width: 144px;
+                height: 136px;
+            }
+            &-second {
+                display: none;
+            }
+            &-third {
+                display: none;
+            }
+        }
+        &__line {
+            width: 600px;
+            height: 145px;
+            &-first {
+                transform: rotate(30deg);
+                bottom: 150px;
+                right: -300px;
+                width: 600px;
+            }
+            &-second {
+                bottom: 40px;
+                right: -130px;
+            }
+        }
+        &__button {
+            margin-top: 26.5px;
+            margin-left: 0%;
+            padding: 7.5px 20.5px;
+            font-size: 10px;
+            line-height: 12px;
+        }
+    }
+}

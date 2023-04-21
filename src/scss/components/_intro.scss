@@ -1,0 +1,87 @@
+.intro {
+    position: relative;
+    padding-top: 42px;
+    padding-bottom: 100px;
+    overflow: hidden;
+    &__line {
+        position: absolute;
+        width: 1350px;
+        height: 360px;
+        background-color: #fff;
+        border-radius: 200px;
+        z-index: 1;
+        &-first {
+            transform: rotate(30deg);
+            bottom: 350px;
+            right: -300px;
+        }
+        &-second {
+            transform: rotate(80deg);
+            bottom: 112px;
+            right: 50px;
+        }
+    }
+    &__img {
+        &-first {
+            position: absolute;
+            left: 665px;
+            bottom: 197px;
+            width: 180px;
+            height: 180px;
+            z-index: 3;
+        }
+        &-second {
+            position: absolute;
+            bottom: 245px;
+            right: 353px;
+            z-index: 3;
+            width: 232px;
+            height: 282px;
+        }
+        &-third {
+            position: absolute;
+            bottom: 80%;
+            right: 264px;
+            z-index: 3;
+            width: 204px;
+            height: 146px;
+        }
+    }
+    &__title {
+        position: relative;
+        font-weight: 900;
+        font-size: 196px;
+        line-height: 88.9%;
+        color: $blue;
+        z-index: 2;
+        width: fit-content;
+    }
+    &__subtitle {
+        position: relative;
+        z-index: 2;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 19.5px;
+        color: $middlegrey;
+        max-width: 407px;
+        margin-top: 50px;
+        margin-left: 46%;
+    }
+    &__button {
+        position: relative;
+        z-index: 2;
+        display: block;
+        margin: 0 auto;
+        padding: 20px 73px;
+        background: $blue;
+        border-radius: 56px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 336px;
+
+        color: #F2F2F2;
+    }
+}

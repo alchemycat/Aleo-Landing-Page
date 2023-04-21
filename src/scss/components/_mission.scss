@@ -1,0 +1,46 @@
+.mission {
+    position: relative;
+    background: $blue;
+    padding: 90px 0px;
+    &::before {
+        position: absolute;
+        content: "01/";
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 130%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        top: 90px;
+        left: 50px;
+    }
+    &::after {
+        position: absolute;
+        content: "";
+        background-color: #fff;
+        right: 50px;
+        top: 90px;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+    }
+    &__wrapper {
+        margin-left: 27.5%;
+        display: flex;
+        gap: 34px;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 130%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    &__description {
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 130%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        max-width: 990px;
+    }
+}

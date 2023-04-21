@@ -3,23 +3,37 @@
 @import "./vendor/variables";
 
 @import "./components/header";
+@import "./components/intro";
+@import "./components/mission";
+
+
+html {
+    font-size: 15px; /* 1rem = 16px */
+}
 
 body {
-    * {
-        font-family: Roboto, sans-serif;
-        font-weight: 400;
-        background-color: $lightgrey;
-    }
-    
-    .container {
-        padding: 0px 50px 0px 50px;
-        margin: 0 auto;
-    }
-
-    .pixel {
-        font-family: Pixel;;
-    }
-    .roboto-900 {
-        font-weight: 900;
-    }
+    background-color: $lightgrey;
 }
+
+* {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    padding: 0px 50px;
+    margin: 0 auto;
+}
+
+.pixel {
+    font-family: Pixel;;
+    font-size: 50px;
+    line-height: 58.59px;
+}
+.roboto-900 {
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 58.59px;
+}
+
+@import "./media";

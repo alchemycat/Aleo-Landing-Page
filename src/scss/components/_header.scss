@@ -1,6 +1,5 @@
 .header {
     padding-top: 38px;
-    padding-bottom: 8px;
     &__wrapper {
         display: flex;
         border-bottom: 1px solid $blue;
@@ -25,7 +24,7 @@
         border-radius: 74px;
         padding: 2px 15px;
         font-size: 25px;
-        line-height: 29px;
+        line-height: 1.7rem;
         color: $darkgrey;
         font-weight: 400;
     }
