@@ -1,0 +1,32 @@
+.header {
+    padding-top: 38px;
+    padding-bottom: 8px;
+    &__wrapper {
+        display: flex;
+        border-bottom: 1px solid $blue;
+        padding-bottom: 8px;
+
+    }
+    &__logo {
+        margin-right: 31%;
+        font-size: 50px;
+        line-height: 59px;
+    }
+    &__nav {
+        display: flex;
+        align-items: center;
+    }
+    &__list {
+        display: flex;
+        gap: 21px;
+    }
+    &__link {
+        background-color: $white;
+        border-radius: 74px;
+        padding: 2px 15px;
+        font-size: 25px;
+        line-height: 29px;
+        color: $darkgrey;
+        font-weight: 400;
+    }
+}
