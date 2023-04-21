@@ -5,6 +5,7 @@
 @import "./components/header";
 @import "./components/intro";
 @import "./components/mission";
+@import "./components/features";
 
 
 html {
@@ -34,6 +35,67 @@ body {
     font-weight: 900;
     font-size: 50px;
     line-height: 58.59px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    &-blue {
+        color: $blue;
+    }
+}
+
+.id {
+    position: absolute;
+    top: 90px;
+    left: 50px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    text-transform: uppercase;
+    &-blue {
+        color: $blue;
+    }
+    &-card {
+        position: static;
+    }
+    &-darkgrey {
+        color: $darkgrey;
+    }
+}
+
+.circle {
+    &::after {
+        position: absolute;
+        content: "";
+        background-color: #fff;
+        right: 50px;
+        top: 90px;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+    }
+    &-blue {
+        &::after {
+            background-color: $blue;
+        }
+    }
+}
+
+.button {
+    padding: 20px 73px;
+    background: $blue;
+    border-radius: 56px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #F2F2F2;
 }
 
 @import "./media";
