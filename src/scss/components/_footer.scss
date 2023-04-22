@@ -1,0 +1,43 @@
+.footer {
+    position: relative;
+    top: 0px;
+    padding: 100px 0px;
+    border-radius: 92px 92px 0px 0px;
+    background-color: $lightgrey;
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__list {
+        display: flex;
+        gap: 0px 13px;
+        &__link {
+            display: block;
+            width: 50px;
+            height: 50px;
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    &__write {
+        position: absolute;
+        top: 100px;
+        right: 50px;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 130%;
+        max-width: 102px;
+        text-align: right;
+        span {
+            color: $middlegrey;
+        }
+        a {
+            color: $blue;
+        }
+    }
+}
