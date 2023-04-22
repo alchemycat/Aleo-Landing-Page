@@ -6,6 +6,7 @@
 @import "./components/intro";
 @import "./components/mission";
 @import "./components/features";
+@import "./components/services";
 
 
 html {
@@ -65,6 +66,12 @@ body {
     }
     &-darkgrey {
         color: $darkgrey;
+    }
+    &-bgblue {
+        background: #0F55F9;
+        color: #fff;
+        border-radius: 91px;
+        padding: 2px 12px;
     }
 }
 
