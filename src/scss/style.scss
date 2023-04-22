@@ -8,6 +8,7 @@
 @import "./components/features";
 @import "./components/services";
 @import "./components/share";
+@import "./components/articles";
 @import "./components/footer";
 
 
@@ -38,6 +39,20 @@ body {
     font-weight: 900;
     font-size: 50px;
     line-height: 58.59px;
+}
+
+.caption__header {
+    font-weight: 900;
+    font-size: 196px;
+    line-height: 88.9%;
+    color: $blue;
+}
+
+.caption__text {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 19.5px;
+    color: $middlegrey;
 }
 
 .title {
@@ -105,9 +120,20 @@ body {
     text-align: center;
     text-transform: uppercase;
     color: #F2F2F2;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid $blue;
+    &:hover {
+        color: $blue;
+        background: white;
+    }
     &-white {
         background: #fff;
         color: $blue;
+        border: 1px solid white;
+        &:hover {
+            color: #fff;
+            background: $blue;
+        }
     }
 }
 

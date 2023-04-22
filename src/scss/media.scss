@@ -9,6 +9,10 @@
         top: 75px;
         left: 45px;
     }
+    .caption__header {
+        font-size: 136px;
+        line-height: 120px;
+    }
     .circle {
         &::after {
             top: 75px;
@@ -18,10 +22,10 @@
     .intro {
         padding-top: 40px;
         padding-bottom: 70px;
-        &__title {
-            font-size: 136px;
-            line-height: 120px;
-        }
+        // &__title {
+        //     font-size: 136px;
+        //     line-height: 120px;
+        // }
         &__subtitle {
             margin-top: 45px;
         }
@@ -188,6 +192,10 @@
     .id {
         left: 30px;
     }
+    .caption__header {
+        font-size: 105px;
+        line-height: 93px;
+    }
     .circle {
 
         &::after {
@@ -213,10 +221,10 @@
     .intro {
         padding-top: 47px;
         padding-bottom: 74px;
-        &__title {
-            font-size: 105px;
-            line-height: 93px;
-        }
+        // &__title {
+        //     font-size: 105px;
+        //     line-height: 93px;
+        // }
         &__subtitle {
             margin-top: 30px;
             max-width: 311px;
@@ -407,6 +415,17 @@
         font-size: 13px;
     }
 
+    .caption__header {
+        font-size: 42px;
+        line-height: 37.34px;
+        letter-spacing: -0.1px;
+    }
+
+    .caption__text {
+        font-size: 13px;
+        line-height: 16.9px;
+    }
+
     .circle {
         &::after {
             display: none;
@@ -442,17 +461,17 @@
         padding-top: 10px;
         padding-bottom: 46px;
         &__title {
-            font-size: 42px;
-            line-height: 37.34px;
+            // font-size: 42px;
+            // line-height: 37.34px;
+            // letter-spacing: -0.1px;
             width: 100%;
-            letter-spacing: -0.1px;
         }
         &__subtitle {
             max-width: 100%;
             margin-left: 0%;
             margin-top: 158px;
-            font-size: 13px;
-            line-height: 16.9px;
+            // font-size: 13px;
+            // line-height: 16.9px;
         }
         &__img {
             &-first {
@@ -529,6 +548,7 @@
                 top: 78px;
                 left: 20px;
                 width: 280px;
+                // width: 100%;
                 height: 136px;
                 object-fit: cover;
                 border-radius: 20px;
@@ -545,6 +565,7 @@
         &__item {
             padding: 16px 23px;
             // max-height: 195px;
+            max-width: 100%;
             &-first {
                 border-radius: 20px 20px 20px 0px;
                 grid-area: 1 / 1 / 2 / 2;
