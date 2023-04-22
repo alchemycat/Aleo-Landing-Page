@@ -118,7 +118,7 @@
     
     .services {
         // padding-bottom: 163px;
-        padding-bottom: 83px;
+        // padding-bottom: 83px;
         &__list {
             margin-top: 0px;
         }
@@ -137,6 +137,33 @@
         &__description {
             margin-top: 20px;
             max-width: 347px;
+        }
+    }
+    .share {
+        padding-top: 83px;
+        padding-bottom: 76px;
+        &.circle {
+            top: 83px;
+        }
+        &__main-id.id {
+            top: 83px;
+        }
+        &__title {
+            max-width: 383px;
+            text-align: right;
+        }
+        &__form {
+            max-width: 100%;
+            margin-left: 0%;
+            padding-top: 70px;
+            gap: 15px 0px;
+        }
+        &__input {
+            padding: 30px 75px 37px 75px;
+        }
+        &__button {
+            margin-left: 50%;
+            margin-top: 40px;
         }
     }
 }
@@ -283,7 +310,7 @@
     }
     .services {
         // padding-bottom: 163px;
-        padding-bottom: 80px;
+        // padding-bottom: 80px;
         &__list {
             margin-top: 0px;
         }
@@ -299,6 +326,32 @@
         }
         &__description {
             margin-top: 10px;
+        }
+    }
+
+    .share {
+        padding-top: 74px;
+        padding-bottom: 72px;
+        &__main-id.id {
+            top: 74px;
+        }
+        &.circle {
+            top: 74px;
+        }
+        &__title {
+            margin-left: 19%;
+            max-width: 250px;
+        }
+        &__form {
+            padding-top: 100px;
+            gap: 10px 0px;
+        }
+        &__input {
+            padding: 22px 58px;
+        }
+        &__button {
+            margin-top: 29px;
+            max-width: 350px;
         }
     }
 }
@@ -505,9 +558,9 @@
 
     .services {
         position: relative;
-        top: -45px;
+        // top: -45px;
         // padding-bottom: 120px;
-        padding-bottom: 47px;
+        // padding-bottom: 47px;
         &__item {
             padding: 10px 0px;
         }
@@ -521,6 +574,38 @@
         &__description {
             font-size: 13px;
             line-height: 16.9px;
+        }
+    }
+
+    .share {
+        border-radius: 36px 36px 0px 0px;
+        padding-top: 46px;
+        padding-bottom: 46px;
+        &.circle {
+            top: 46px;
+        }
+        &__main-id.id {
+            top: 46px;
+        }
+        &__title {
+            margin-left: 7.29%;
+        }
+        &__form {
+            padding-top: 50px;
+            gap: 8px 0px;
+        }
+        &__input {
+            padding: 15px 22px;
+
+            font-size: 13px;
+            line-height: 130%;
+            &::placeholder {
+                font-size: 13px;
+                line-height: 130%;
+            }
+        }
+        &__button {
+            margin-top: 5px;
         }
     }
 }

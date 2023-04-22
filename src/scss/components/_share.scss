@@ -1,0 +1,47 @@
+.share {
+    position: relative;
+    background-color: $blue;
+    border-radius: 92px 92px 0px 0px;
+    padding-top: 97px;
+    padding-bottom: 100px;
+    &__main-id.id {
+        top: 97px;
+    }
+    &.circle {
+        top: 97px;
+    }
+    &__title {
+        margin-left: 11%;
+        position: absolute;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 11px 0px;
+        max-width: 542px;
+        margin-left: 45.89%;
+    }
+    &__input {
+        padding: 22px 45px;
+        border-radius: 56px;
+        background-color: #fff;
+        font-size: 15px;
+        line-height: 130%;
+
+        text-transform: capitalize;
+
+        color: $darkgrey;
+        &::placeholder {
+            font-size: 15px;
+            line-height: 130%;
+    
+            text-transform: capitalize;
+    
+            color: #D1D1D1;
+        }
+    }
+    &__button {
+        max-width: 256px;
+        margin-top: 22px;
+    }
+}
