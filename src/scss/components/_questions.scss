@@ -19,6 +19,8 @@
     }
     &__wrapper {
         display: flex;
+        max-width: 1820px;
+        margin: 0 auto;
     }
     &__left {
         position: relative;
