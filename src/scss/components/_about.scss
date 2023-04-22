@@ -1,0 +1,37 @@
+.about {
+    position: relative;
+    padding-top: 42px;
+    padding-bottom: 98px;
+    &__id.id {
+        position: static;
+    }
+    &__wrapper {
+        display: flex;
+        margin-top: 47px;
+        gap: 0px 34px;
+    }
+    &__col {
+        width: 49%;
+        &-left {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__subtitle {
+        max-width: 407px;
+    }
+    &__image {
+        position: absolute;
+        top: 42px;
+        right: 50px;
+        width: 202px;
+        height: 264px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+    }
+}

@@ -1,0 +1,111 @@
+.questions {
+    position: relative;
+    background-color: $blue;
+    padding-top: 98px;
+    padding-bottom: 104px;
+    border-radius: 92px 92px 0px 0px;
+    &__top {
+        display: flex;
+        gap: 0px 35px;
+        justify-content: center;
+    }
+    &__text {
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 130%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        max-width: 910px;
+    }
+    &__wrapper {
+        display: flex;
+    }
+    &__left {
+        position: relative;
+        display: flex;
+        min-height: 694px;
+        width: 56.81%;
+    }
+    &__right {
+        position: relative;
+        display: flex;
+        min-height: 694px;
+        width: 44.19%;
+        margin-right: 230px;
+    }
+    &__item {
+        padding: 40px;
+        background-color: #fff;
+        border: 1px solid $blue;
+        width: 477px;
+        display: flex;
+        flex-direction: column;
+        min-height: 294px;
+        justify-content: space-between;
+        
+        &-br {
+            border-radius: 20px 20px 0px 20px;
+        }
+        &-left:nth-child(1) {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: 4;
+        }
+        &-left:nth-child(2) {
+            position: absolute;
+            top: 135px;
+            left: 100px;
+            z-index: 3;
+        }
+        &-left:nth-child(3) {
+            position: absolute;
+            top: 242px;
+            left: 368px;
+            z-index: 2;
+        }
+        &-left:nth-child(4) {
+            position: absolute;
+            top: 401px;
+            left: 600px;
+            z-index: 1;
+            border-radius: 20px;
+        }
+        &-right:nth-child(1) {
+            position: absolute;
+            top: 79px;
+            left: 0px;
+            z-index: 3;
+        }
+        &-right:nth-child(2) {
+            position: absolute;
+            top: 219px;
+            left: 240px;
+            z-index: 2;
+        }
+        &-right:nth-child(3) {
+            position: absolute;
+            top: 353px;
+            left: 339px;
+            z-index: 1;
+        }
+    }
+    &__caption {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 130%;
+        text-transform: uppercase;
+        color: $darkgrey;
+        align-self: flex-end;
+        max-width: 180px;
+        text-align: right;
+    }
+    &__description {
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 130%;
+        color: $middlegrey;
+        margin-top: 21%;
+
+    }
+}
