@@ -1,0 +1,65 @@
+.economy {
+    position: relative;
+    background-color: $lightgrey;
+    top: -75px;
+    padding-top: 90px;
+    border-radius: 92px 92px 0px 0px;
+        
+    &__top {
+        display: flex;
+        gap: 0px 34px;
+    }
+    &__title {
+        text-align: right;
+        width: 49%;
+    }
+    &__text {
+        font-weight: 700;
+        font-size: 100px;
+        line-height: 84%;
+        color: $blue;
+        width: 49%;
+    }
+    &__bottom {
+        display: flex;
+        gap: 0px 34px;
+        &-col {
+            width: 49%;
+        }
+    }
+
+    &__notify {
+        position: absolute;
+        top: 170px;
+        left: 42%;
+        transform: translateX(-50%);
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 130%;
+        color: $darkgrey;
+        text-align: right;
+        text-transform: uppercase;
+        max-width: 254px;
+    }
+ 
+    &__description {
+        margin-top: 49px;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 130%;
+        color: $middlegrey;
+        max-width: 409px;
+    }
+    &__img {
+        position: absolute;
+        bottom: 0px;
+        width: 313px;
+        height: 202px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+    }
+}
