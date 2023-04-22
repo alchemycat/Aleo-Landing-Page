@@ -207,14 +207,29 @@
             gap: 20px;
             width: 100%;
         }
-        &__item {
-            padding: 40px;
-        }
-        &__description {
-            margin-top: 10%;
-        }
         &__button {
             margin-top: 20px;
+        }
+    }
+
+    .article {
+        &__wrapper {
+            grid-template-columns: 1fr;
+            grid-column-gap: 0px;
+            grid-row-gap: 59px;
+        }
+        &__text {
+            margin-top: 14px;
+        }
+        &__navigation {
+            margin-top: 42px;
+        }
+    }
+
+    .card {
+        padding: 40px;
+        &__description {
+            margin-top: 10%;
         }
     }
 
@@ -459,16 +474,38 @@
             flex-direction: column;
             flex-wrap: nowrap;
         }
-        &__item {
-            max-width: 100%;
-            padding: 40px;
+        &__button {
+            margin-top: 30px;
         }
+    }
+
+    .article {
+        padding-top: 55px;
+        grid-row-gap: 44px;
+        &__caption {
+            font-size: 15px;
+            max-width: 252px;
+        }
+        &__description {
+            font-size: 15px;
+        }
+        &__text {
+            font-size: 18px;
+            p {
+                font-size: 18px;
+            }
+        }
+        &__button {
+            padding: 20px 74px;
+        }
+    }
+
+    .card {
+        max-width: 100%;
+        padding: 40px;
         &__description {
             margin-top: 10%;
             max-width: 100%;
-        }
-        &__button {
-            margin-top: 30px;
         }
     }
 
@@ -776,13 +813,15 @@
         &__list {
             gap: 6px;
         }
-        &__item {
-            max-width: 100%;
-            padding: 16px 24px 21px 24px;
+        &__button {
+            margin-top: 22px;
         }
-        &__date {
-            font-size: 13px;
+    }
 
+    .article {
+        padding-top: 13px;
+        &__wrapper {
+            grid-row-gap: 8px;
         }
         &__caption {
             font-size: 13px;
@@ -791,11 +830,37 @@
         &__description {
             font-size: 13px;
         }
+        &__text {
+            padding: 0 27px;
+            margin-top: 0px;
+            font-size: 13px;
+            p {
+                margin: 15px 0px;
+            }
+        }
+        &__navigation {
+            margin-top: 23px;
+        }
         &__button {
-            margin-top: 22px;
+            padding: 7.5px 27px;
         }
     }
 
+    .card {
+        max-width: 100%;
+        padding: 16px 24px 21px 24px;
+        &__date {
+            font-size: 13px;
+    
+        }
+        &__caption {
+            font-size: 13px;
+            max-width: 147px;
+        }
+        &__description {
+            font-size: 13px;
+        }
+    }
 
     .footer {
         padding: 46px 0px;

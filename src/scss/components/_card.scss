@@ -1,0 +1,46 @@
+.card {
+    padding: 40px 57px;
+    border: 1px solid $blue;
+    border-radius: 20px;
+    max-width: 477px;
+    background-color: #fff;
+    &-blue {
+        background-color: $blue;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__caption {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 130%;
+        text-transform: uppercase;
+        color: $darkgrey;
+        max-width: 231px;
+        &-white {
+            color: #fff;
+        }
+    }
+    &__date {
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 130%;
+        color: $middlegrey;
+        &-white {
+            color: #fff;
+        }
+    }
+    &__description {
+        margin-top: 28%;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 130%;
+        max-width: 363px;
+        color: $middlegrey;
+        &-white {
+            color: #fff;
+        }
+    }
+}
