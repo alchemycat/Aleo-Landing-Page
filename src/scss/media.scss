@@ -367,6 +367,35 @@
         }
     }
 
+    .ecosystem {
+        padding-top: 75px;
+        &__wrapper {
+            flex-direction: column;
+            width: 100%;
+            gap: 10px 0px;
+        }
+        &__col {
+            &:nth-child(1) {
+                margin-left: 16.8%;
+                width: fit-content;
+            }
+            &:nth-child(2) {
+                width: 100%;
+            }
+        }
+        &__list {
+            width: 100%;
+        }
+        &__row {
+            margin-top: 14px;
+           max-width: 100%;
+        }
+        &__button {
+            margin-left: 50%;
+        }
+    }
+
+
     .footer {
         padding: 83px 0px;
         &__wrapper {
@@ -764,6 +793,12 @@
         &__img {
             right: 45px;
             bottom: 410px;
+        }
+    }
+
+    .ecosystem {
+        &__title {
+            max-width: 300px;
         }
     }
 
@@ -1262,6 +1297,33 @@
         &__img {
             position: static;
             margin-top: 15px;
+        }
+    }
+
+    .ecosystem {
+        padding-top: 0px;
+        &__id.id {
+            top: 0px;
+        }
+        &__list {
+            margin: 0 auto;
+            max-width: 400px;
+
+        }
+        &__row {
+            flex-wrap: wrap;
+            gap: 20px 0px;
+        }
+        &__item {
+            width: 100%;
+            display: flex;
+            &-fe {
+                justify-content: flex-end;
+            }
+        }
+        &__button {
+            margin-top: 23px;
+            margin-left: 0%;
         }
     }
 
