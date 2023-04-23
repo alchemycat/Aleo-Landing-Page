@@ -19,6 +19,9 @@
 @import "./components/differ";
 @import "./components/footer";
 
+// :root {
+//     --animate-duration: 0.5s;
+// }
 
 html {
     font-size: 15px; /* 1rem = 16px */
@@ -143,6 +146,19 @@ body {
             background: $blue;
         }
     }
+}
+
+.anim-1s {
+    animation-delay: 1s;
+    animation-duration: 0.5s;
+}
+.anim-05s {
+    animation-delay: 0.5s;
+    animation-duration: 0.5s;
+}
+.anim-02s {
+    animation-delay: 0.2s;
+    animation-duration: 0.5s;
 }
 
 @import "./media";

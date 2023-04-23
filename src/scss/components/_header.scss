@@ -1,15 +1,25 @@
 .header {
     padding-top: 38px;
     &__wrapper {
+        position: relative;
         display: flex;
-        border-bottom: 1px solid $blue;
         padding-bottom: 8px;
-
+        &-line {
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            width: 0%;
+            height: 1px;
+            background: $blue;
+        }          
     }
     &__logo {
         margin-right: 31%;
         font-size: 50px;
         line-height: 59px;
+        &:visited {
+            color: $blue;
+        }
     }
     &__nav {
         display: flex;
