@@ -33,13 +33,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	animateLine();
 
-	function articles() {
+	function articles(showCount = 2) {
 		const art = document.querySelectorAll(".articles__item");
 		const showMore = document.querySelector(".articles__button");
+		const emptyMessage = document.querySelector(".articles__empty");
 
-		let showed = 2;
-		let limit = 2;
+		let showed = showCount;
+		let limit = showCount;
 		let startIndex = showed - limit;
+
+		function hideButton() {
+			if (!art.length) {
+				showMore.style.display = "none";
+				emptyMessage.style.display = "block";
+			}
+			if (art.length <= showCount) {
+				showMore.style.display = "none";
+			}
+		}
+
+		hideButton();
 
 		function hideArticle() {
 			return new Promise((resolve) => {
@@ -50,9 +63,12 @@ document.addEventListener("DOMContentLoaded", () => {
 			});
 		}
 
-		hideArticle().then(() => {
-			showArticles(startIndex, showed);
-		});
+		if (art.length) {
+			hideArticle().then(() => {
+				showArticles(startIndex, showed);
+			});
+		}
+
 
 		function showArticles(from, to) {
 			for (let i = from; i < to; i++) {

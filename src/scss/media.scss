@@ -1252,6 +1252,10 @@
         &__button {
             margin-top: 22px;
         }
+        &__empty {
+            font-size: 13px;
+            max-width: 147px;
+        }
     }
 
     .article {
@@ -1297,6 +1301,8 @@
             font-size: 13px;
         }
     }
+
+
 
     .about {
         padding-top: 11px;

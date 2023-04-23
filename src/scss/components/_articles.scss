@@ -34,4 +34,15 @@
     &__button {
         width: 100%;
     }
+    &__empty {
+        display: none;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 130%;
+        text-transform: uppercase;
+        color: $darkgrey;
+        &-white {
+            color: #fff;
+        }
+    }
 }
