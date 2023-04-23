@@ -74,6 +74,28 @@
         }
     }
 
+
+    .differ {
+        top: 100px;
+        padding: 75px 0px 147px 0px;
+        &__wrapper {
+            flex-direction: column;
+            margin-left: 0%;
+            gap: 17px 0px;
+        }
+        &__imgs {
+            position: static;
+        }
+        &__col {
+            &:nth-child(3) {
+                width: 100%;
+            }
+        }
+        &__title {
+            margin-left: 20.8%;
+        }
+    }
+
     .features {
         padding: 79px 0px;
         .id {
@@ -535,6 +557,12 @@
         }
     }
     .mission {
+        &__description {
+            font-size: 34px;
+        }
+    }
+    .differ {
+        top: 100px;
         &__description {
             font-size: 34px;
         }
@@ -1018,6 +1046,22 @@
         border-radius: 36px 36px 0px 0px;
         &__wrapper {
             gap: 10px;
+        }
+        &__description {
+            font-size: 20px;
+        }
+    }
+
+    .differ {
+        top: 50px;
+        padding: 46px 0px 73px 0px;
+        border-radius: 36px 36px 0px 0px;
+
+        &__wrapper {
+            gap: 10px;
+        }
+        &__col {
+            width: 100%;
         }
         &__description {
             font-size: 20px;
