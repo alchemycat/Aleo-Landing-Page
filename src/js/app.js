@@ -71,10 +71,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 		function showArticles(from, to) {
-			for (let i = from; i < to; i++) {
-				let item = art[i];
-				item.style.display = "block";
-			}
+			try {
+				for (let i = from; i < to; i++) {
+					let item = art[i];
+					item.style.display = "block";
+				}
+			} catch {}
 		}
 
 		showMore.addEventListener("click", () => {
