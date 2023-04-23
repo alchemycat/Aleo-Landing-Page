@@ -27,5 +27,9 @@
         line-height: 1.7rem;
         color: $darkgrey;
         font-weight: 400;
+        transition: all 0.3s ease;
+        &:hover {
+            color: $blue;
+        }
     }
 }
