@@ -143,6 +143,29 @@
             max-width: 347px;
         }
     }
+    .token {
+        // padding-bottom: 163px;
+        // padding-bottom: 83px;
+        &__list {
+            margin-top: 0px;
+        }
+        &__title {
+            margin-left: 23.7%;
+            max-width: 263px;
+            text-align: right;
+        }
+        &__item {
+            // justify-content: stretch;
+            gap: 0px 5px;
+        }
+        &__caption {
+            margin-left: 26.48%;
+        }
+        &__description {
+            margin-top: 20px;
+            max-width: 347px;
+        }
+    }
     .share {
         padding-top: 83px;
         padding-bottom: 156px;
@@ -395,6 +418,25 @@
         }
     }
 
+    .token {
+        &__item {
+            justify-content: flex-end;
+            &-wrapper {
+                flex-direction: column;
+                gap: 15px 0px;
+
+                &-pr100 {
+                    padding-right: 100px;
+                }
+            }
+                
+            }
+        &__caption {
+            margin-left: 0%;
+            text-align: left;
+        }
+    }
+
 
     .footer {
         padding: 83px 0px;
@@ -552,6 +594,26 @@
         }
     }
     .services {
+        // padding-bottom: 163px;
+        // padding-bottom: 80px;
+        &__list {
+            margin-top: 0px;
+        }
+        &__title {
+            margin-left: 16%;
+            max-width: 263px;
+            text-align: right;
+        }
+        &__item {
+            gap: 0px 0px;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        &__description {
+            margin-top: 10px;
+        }
+    }
+    .token {
         // padding-bottom: 163px;
         // padding-bottom: 80px;
         &__list {
@@ -799,6 +861,21 @@
     .ecosystem {
         &__title {
             max-width: 300px;
+        }
+    }
+
+    .token {
+        &__item {
+            &-wrapper {
+                align-items: flex-end;
+                &-pr100 {
+                    padding-right: 0px;
+                }
+            }
+                
+            }
+        &__caption {
+            text-align: right;
         }
     }
 
@@ -1055,6 +1132,28 @@
             line-height: 16.9px;
         }
     }
+
+    .token {
+        position: relative;
+        // top: -45px;
+        // padding-bottom: 120px;
+        // padding-bottom: 47px;
+        &__item {
+            padding: 10px 0px;
+        }
+        &__id.id {
+            top: 10px;
+        }
+        &__caption {
+            font-size: 13px;
+            line-height: 16.9px;
+        }
+        &__description {
+            font-size: 13px;
+            line-height: 16.9px;
+        }
+    }
+
 
     .share {
         border-radius: 36px 36px 0px 0px;
@@ -1326,6 +1425,26 @@
             margin-left: 0%;
         }
     }
+
+    .token {
+        &__item {
+            align-items: stretch;
+            &-wrapper {
+                gap: 0px 0px;
+                align-items: flex-end;
+                &-pr100 {
+                    padding-right: 0px;
+                }
+            }
+                
+            }
+        &__caption {
+            max-width: 144px;
+            min-width: 144px;
+            text-align: right;
+        }
+    }
+
 
 
     .footer {
