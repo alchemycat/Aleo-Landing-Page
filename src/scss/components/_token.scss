@@ -1,5 +1,6 @@
 .token {
     position: relative;
+    overflow: hidden;
     &__main-id.id {
         top: 0px;
     }

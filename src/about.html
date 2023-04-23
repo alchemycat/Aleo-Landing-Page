@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-@@include('html/head.html', {
-    "title": "About Us"
-})
-<body>
-     
-    @@include('html/header.html', {})
-    <section>
-      @@include('html/about.html', {})
-      @@include('html/questions.html', {})
-      @@include('html/economy.html', {})
-      @@include('html/ecosystem.html', {})
-      @@include('html/token.html', {})
-      @@include('html/differ.html', {})
-    </section>
-    @@include('html/footer.html', {})
-
-    <script src="js/app.min.js"></script>
-</body>
+	@@include('html/head.html', { "title": "About Us" })
+	<body>
+		@@include('html/header.html', {})
+		<section>
+			@@include('html/about.html', {}) @@include('html/questions.html', {})
+			@@include('html/economy.html', {}) @@include('html/ecosystem.html', {})
+			@@include('html/token.html', {}) @@include('html/differ.html', {})
+		</section>
+		@@include('html/footer.html', {})
+		<script src="js/wow.min.js"></script>
+		<script>
+			window.addEventListener("DOMContentLoaded", () => {
+				new WOW().init();
+			});
+		</script>
+		<script src="js/app.min.js"></script>
+	</body>
 </html>
