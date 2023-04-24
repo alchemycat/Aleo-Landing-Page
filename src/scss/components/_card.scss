@@ -1,8 +1,10 @@
 .card {
+    overflow: hidden;
     padding: 40px 57px;
     border: 1px solid $blue;
     border-radius: 20px;
-    max-width: 477px;
+    // max-width: 477px;
+    width: 48%;
     background-color: #fff;
     &-blue {
         background-color: $blue;
@@ -13,6 +15,7 @@
         justify-content: space-between;
     }
     &__caption {
+        word-wrap: break-word;
         font-weight: 700;
         font-size: 20px;
         line-height: 130%;
@@ -28,6 +31,8 @@
         font-size: 15px;
         line-height: 130%;
         color: $middlegrey;
+        word-wrap: break-word;
+        max-width: 120px;
         &-white {
             color: #fff;
         }
@@ -38,6 +43,7 @@
         font-size: 15px;
         line-height: 130%;
         max-width: 363px;
+        word-wrap: break-word;
         color: $middlegrey;
         &-white {
             color: #fff;

@@ -61,12 +61,14 @@
         margin-top: 50px;
         margin-left: 46%;
     }
+    &__wrap {
+        display: flex;
+    }
     &__button {
         position: relative;
         z-index: 2;
         display: block;
         margin: 0 auto;
         margin-top: 336px;
-
     }
 }

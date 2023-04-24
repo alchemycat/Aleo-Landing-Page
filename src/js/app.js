@@ -33,61 +33,49 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	animateLine();
 
-	function articles(showCount = 2) {
-		const art = document.querySelectorAll(".articles__item");
-		const showMore = document.querySelector(".articles__button");
-		const emptyMessage = document.querySelector(".articles__empty");
-
-		let showed = showCount;
-		let limit = showCount;
-		let startIndex = showed - limit;
-
-		function hideButton() {
-			if (!art.length) {
-				showMore.style.display = "none";
-				emptyMessage.style.display = "block";
-			}
-			if (art.length <= showCount) {
-				showMore.style.display = "none";
-			}
-		}
-
-		hideButton();
-
-		function hideArticle() {
-			return new Promise((resolve) => {
-				for (let item of art) {
-					item.style.display = "none";
-				}
-				resolve();
+	function smoothScrolling() {
+		try {
+			document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+				anchor.addEventListener('click', function (e) {
+					e.preventDefault();
+			
+					document.querySelector(this.getAttribute('href')).scrollIntoView({
+						behavior: 'smooth'
+					});
+				});
 			});
-		}
-
-		if (art.length) {
-			hideArticle().then(() => {
-				showArticles(startIndex, showed);
-			});
-		}
-
-
-		function showArticles(from, to) {
-			try {
-				for (let i = from; i < to; i++) {
-					let item = art[i];
-					item.style.display = "block";
-				}
-			} catch {}
-		}
-
-		showMore.addEventListener("click", () => {
-			showed += limit;
-			showArticles(startIndex, showed);
-			if (showed >= art.length) {
-				showMore.style.display = "none";
-			}
-		});
-
+		} catch {}
+	
 	}
 
-	articles();
+	smoothScrolling();
+
+	function copyLink() {
+		try {
+			const copyBtn = document.querySelector("#copy-me");
+
+			copyBtn.addEventListener("click", async () => {
+				const text = copyBtn.textContent;
+				const textArea = document.createElement("textarea");
+				textArea.value = text;
+				document.body.appendChild(textArea);
+				textArea.focus();
+				textArea.select();
+				try {
+				  document.execCommand('copy');
+				} catch (err) {
+				  console.error('Unable to copy to clipboard', err);
+				}
+				document.body.removeChild(textArea);
+				copyBtn.textContent = "Copied!";
+				setTimeout(() => {
+					copyBtn.textContent = text;
+				}, 500);
+				
+			});
+		} catch {}
+	
+	}
+	
+	copyLink();
 });

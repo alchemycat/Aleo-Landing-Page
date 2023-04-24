@@ -3,7 +3,8 @@
         padding: 0 45px;
     }
     .header {
-        padding-top: 35px;
+        // padding-top: 35px;
+        padding-top: 10px;
     }
     .id {
         top: 75px;
@@ -57,7 +58,8 @@
             }
         }
         &__button {
-            margin-top: 240px;
+            // margin-top: 240px;
+            margin-top: 200px;
             margin-left: 45.5%;
         }
     }
@@ -262,6 +264,15 @@
             grid-template-columns: 1fr;
             grid-column-gap: 0px;
             grid-row-gap: 59px;
+        }
+        &__item.card {
+            width: 49%;
+        }
+        &__col {
+            &-3 {
+               max-width: 100%;
+               min-width: 100%; 
+            }
         }
         &__text {
             margin-top: 14px;
@@ -748,13 +759,16 @@
                 font-size: 18px;
             }
         }
+        &__item.card {
+            width: 100%;
+        }
         &__button {
             padding: 20px 74px;
         }
     }
 
     .card {
-        max-width: 100%;
+        width: 100%;
         padding: 40px;
         &__description {
             margin-top: 10%;
@@ -1270,6 +1284,7 @@
         &__description {
             font-size: 13px;
         }
+
         &__text {
             padding: 0 27px;
             margin-top: 0px;

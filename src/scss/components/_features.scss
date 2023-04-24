@@ -86,6 +86,9 @@
         line-height: 130%;
         color: #96989B;
     }
+    &__wrap {
+        display: flex;
+    }
     &__button {
         display: block;
         margin: 0 auto;

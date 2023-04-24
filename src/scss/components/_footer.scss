@@ -31,11 +31,15 @@
         span {
             color: $middlegrey;
         }
-        a {
+        #copy-me {
             color: $blue;
             transition: all 0.3s ease;
+            cursor: pointer;
             &:hover {
-                opacity: 0.5;
+                opacity: 0.8;
+            }
+            &:active {
+                color: darkblue;
             }
         }
     }
