@@ -26,27 +26,42 @@
         word-wrap: break-word;
         width: 100%;
         overflow: hidden;
+        img {
+            width: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+            margin-top: 20px;
+        }
         p {
             width: 100%;
             margin: 40px 0px;
             word-wrap: break-word;
         }
     }
-    &__image {
-        margin: 40px 0px;
-        width: 100%;
-        img {
-            width: 100%;
-            object-fit: cover;
-            border-radius: 20px;
-        }
-    }
+    // &__image {
+    //     margin: 40px 0px;
+    //     width: 100%;
+   
+    // }
     &__item.card {
         width: 100%;
     }
     &__navigation {
-        display: flex;
-        justify-content: space-between;
+        width: 100%;
+        position: relative;
         margin-top: 32px;
+        height: 65px;
+    }
+    &__button {
+        &-left {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+        &-right {
+            position: absolute;
+            right: 0px;
+            top: 0px;
+        }
     }
 }
