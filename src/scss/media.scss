@@ -3,7 +3,6 @@
         padding: 0 45px;
     }
     .header {
-        // padding-top: 35px;
         padding-top: 10px;
     }
     .id {
@@ -13,6 +12,7 @@
     .caption__header {
         font-size: 136px;
         line-height: 120px;
+        max-width: 920px;
     }
     .circle {
         &::after {
@@ -23,12 +23,9 @@
     .intro {
         padding-top: 40px;
         padding-bottom: 70px;
-        // &__title {
-        //     font-size: 136px;
-        //     line-height: 120px;
-        // }
         &__subtitle {
             margin-top: 45px;
+            margin-left: 50%;
         }
         &__img {
             &-first {
@@ -495,6 +492,7 @@
     .caption__header {
         font-size: 105px;
         line-height: 93px;
+        max-width: 720px;
     }
     .title {
         max-width: 383px;
@@ -970,6 +968,7 @@
         font-size: 42px;
         line-height: 37.34px;
         letter-spacing: -0.1px;
+        max-width: 320px;
     }
 
     .caption__text {

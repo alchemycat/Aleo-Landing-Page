@@ -1,9 +1,6 @@
 .services {
     position: relative;
     overflow: hidden;
-    // padding-bottom: 183px;
-    // padding-bottom: 103px;
-    // top: -85px;
     &__main-id.id {
         top: 0px;
     }
@@ -42,6 +39,8 @@
         line-height: 130%;
         text-transform: uppercase;
         color: $darkgrey;
+        word-wrap: break-word;
+        max-width: 200px;
     }
     &__description {
         font-weight: 700;
@@ -49,6 +48,7 @@
         line-height: 130%;
         color: #96989B;
         max-width: 422px;
+        word-wrap: break-word;
     }
     
 }

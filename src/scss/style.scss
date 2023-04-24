@@ -49,10 +49,12 @@ body {
 }
 
 .caption__header {
+    max-width: 1400px;
     font-weight: 900;
     font-size: 196px;
     line-height: 88.9%;
     color: $blue;
+    word-wrap: break-word;
 }
 
 .caption__text {
@@ -60,6 +62,7 @@ body {
     font-size: 15px;
     line-height: 19.5px;
     color: $middlegrey;
+    word-wrap: break-word;
 }
 
 .title {
