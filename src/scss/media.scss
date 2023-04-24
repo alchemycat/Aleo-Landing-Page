@@ -496,6 +496,9 @@
         font-size: 105px;
         line-height: 93px;
     }
+    .title {
+        max-width: 383px;
+    }
     .circle {
 
         &::after {
@@ -1154,6 +1157,7 @@
         &__caption {
             font-size: 13px;
             gap: 10px;
+            max-width: 170px;
             img {
                 width: 9px;
                 height: 9px;

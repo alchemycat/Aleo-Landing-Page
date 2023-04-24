@@ -19,10 +19,6 @@
 @import "./components/differ";
 @import "./components/footer";
 
-// :root {
-//     --animate-duration: 0.5s;
-// }
-
 html {
     font-size: 15px; /* 1rem = 16px */
 }
@@ -67,11 +63,13 @@ body {
 }
 
 .title {
+    max-width: 583px;
     font-weight: 700;
     font-size: 20px;
     line-height: 130%;
     text-transform: uppercase;
     color: #FFFFFF;
+    word-wrap: break-word;
     &-blue {
         color: $blue;
     }
