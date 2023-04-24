@@ -45,13 +45,15 @@
         max-width: 292px;
         min-width: 292px;
         text-align: right;
+        word-wrap: break-word;
     }
     &__description {
         font-weight: 700;
         font-size: 15px;
         line-height: 130%;
-        color: #96989B;
+        color: $middlegrey;
         max-width: 422px;
+        word-wrap: break-word;
     }
     
 }

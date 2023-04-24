@@ -9,6 +9,7 @@
     &__top {
         display: flex;
         gap: 0px 34px;
+        justify-content: flex-end;
     }
     &__title {
         text-align: right;
@@ -20,6 +21,7 @@
         line-height: 84%;
         color: $blue;
         width: 49%;
+        word-wrap: break-word;
     }
     &__bottom {
         display: flex;
@@ -41,6 +43,7 @@
         text-align: right;
         text-transform: uppercase;
         max-width: 254px;
+        word-wrap: break-word;
     }
  
     &__description {
@@ -50,6 +53,7 @@
         line-height: 130%;
         color: $middlegrey;
         max-width: 409px;
+        word-wrap: break-word;
     }
     &__img {
         position: absolute;
