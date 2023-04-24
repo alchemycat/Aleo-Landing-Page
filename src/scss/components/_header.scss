@@ -1,5 +1,4 @@
 .header {
-    // padding-top: 38px;
     padding-top: 38px;
     &__wrapper {
         position: relative;
@@ -29,6 +28,7 @@
     &__list {
         display: flex;
         gap: 21px;
+        flex-wrap: wrap;
     }
     &__link {
         background-color: $white;
